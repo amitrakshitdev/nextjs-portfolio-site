@@ -4,6 +4,7 @@ import RippleCanvas from "@/components/RippleCanvas";
 import heroBGImg from "@/assets/images/bg-hero-section.jpg";
 import profileImg from "@/assets/images/profile-pic.jpg";
 import clsx from "clsx";
+import Section from "@/components/Section";
 export default function Home() {
   return (
     <main className="w-screen h-auto">
@@ -49,56 +50,25 @@ export default function Home() {
                 Hi, this is{" "}
                 <span className={"text-daccent-100"}>Amit Rakshit</span>
               </h1>
-              <h5 className={clsx(["text-center", "text-dwhite-400"])}>
-                I am a fullstack developer with 4+ years of industry
-                experience. Currently, I am working as a Senior Software
-                Engineer II at HCL Software. If you wish to build web app,
-                mobile app, website, dashboard, backend api etc., I can help you
-                with my full credibility.
+              <h5
+                className={clsx(["text-center", "text-dwhite-400", "max-w-xl"])}
+              >
+                I am a fullstack developer with 4+ years of industry experience.
+                Currently, I am working as a Senior Software Engineer II at HCL
+                Software. If you wish to build web app, mobile app, website,
+                dashboard, backend api etc., I can help you with my full
+                credibility.
               </h5>
             </div>
           </div>
         </RippleCanvas>
       </section>
       <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          blanditiis quis fugiat? Non soluta ab delectus blanditiis, dicta ipsa
-          repellat expedita iusto ullam alias distinctio cum, reprehenderit unde
-          temporibus facere!
-        </p>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          blanditiis quis fugiat? Non soluta ab delectus blanditiis, dicta ipsa
-          repellat expedita iusto ullam alias distinctio cum, reprehenderit unde
-          temporibus facere!
-        </p>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          blanditiis quis fugiat? Non soluta ab delectus blanditiis, dicta ipsa
-          repellat expedita iusto ullam alias distinctio cum, reprehenderit unde
-          temporibus facere!
-        </p>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          blanditiis quis fugiat? Non soluta ab delectus blanditiis, dicta ipsa
-          repellat expedita iusto ullam alias distinctio cum, reprehenderit unde
-          temporibus facere!
-        </p>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          blanditiis quis fugiat? Non soluta ab delectus blanditiis, dicta ipsa
-          repellat expedita iusto ullam alias distinctio cum, reprehenderit unde
-          temporibus facere!
-        </p>
+        <Section title={"Aboute ME"} className={clsx(["my-10"])}>
+          <div>
+            
+          </div>
+        </Section>
       </section>
     </main>
   );

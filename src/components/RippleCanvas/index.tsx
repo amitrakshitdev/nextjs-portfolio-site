@@ -62,10 +62,12 @@ export default function RippleCanvas({ imgSrc, children }: RippleCanvasProps) {
           backgroundPosition: "50%",
           backgroundSize: "auto 155%",
           backgroundRepeat: "no-repeat",
-          // filter: "blur(1px)",
         }}
       >
-        <div className="absolute w-full h-full" style={{backdropFilter: "blur(2px)"}}></div>
+        <div
+          className="absolute w-full h-full"
+          style={{ backdropFilter: "blur(2px)" }}
+        ></div>
         {children}
       </div>
     </>

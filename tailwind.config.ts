@@ -23,7 +23,8 @@ const config: Config = {
           100: "#fec544"
         },
         dblack: {
-          50: '#070D1B'
+          50: '#070D1B',
+          100: "#0a101e"
         }
       }
     },

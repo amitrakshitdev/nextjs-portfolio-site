@@ -1,0 +1,29 @@
+.section-title {
+  text-align: center;
+}
+
+.section-title-text::before {
+  content: "";
+  display: block;
+  position: inherit;
+  width: 130%;
+  height: 2px;
+  border-radius: 1px;
+  transform-origin: center;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -25%;
+}
+
+.section-title-text::after {
+  content: "";
+  display: block;
+  position: inherit;
+  transform-origin: center;
+  transform: translateX(-50%);
+  bottom: -25%;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  border-radius: 1px;
+}
