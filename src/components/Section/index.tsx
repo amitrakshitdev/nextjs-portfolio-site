@@ -22,7 +22,7 @@ function Section({ title, className, style, children }: SectionProps) {
         >
           <h1
             className={clsx([
-              "hidden sm:block",
+              "hidden lg:block",
               "font-bold text-7xl",
               "opacity-5",
             ])}

@@ -22,7 +22,8 @@ const config: Config = {
           400: "rgb(169, 173, 184)"
         },
         daccent: {
-          100: "#fec544"
+          // 100: "#fec544",
+          100: "#fa3e86"
         },
         dblack: {
           50: '#070D1B',
