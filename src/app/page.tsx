@@ -65,7 +65,7 @@ export default function Home() {
               <h5
                 className={clsx(["text-center", "text-dwhite-400", "max-w-xl"])}
               >
-                I am a fullstack developer with 4+ years of industry experience.
+                I am a frondend developer with 4+ years of industry experience.
                 Currently, I am working as a Senior Software Engineer II at HCL
                 Software. If you wish to build web app, mobile app, website,
                 dashboard, backend api etc., I can help you with my full
