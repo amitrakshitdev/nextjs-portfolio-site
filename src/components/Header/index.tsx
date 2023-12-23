@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import headerData from "./header.json";
 import "./header-style.css";
+import { Roboto } from "next/font/google";
+const roboto = Roboto({ weight: ["500"], style: "normal", subsets: ["latin"] });
 export default function Header({ ...rest }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleState = () => {
@@ -15,22 +17,47 @@ export default function Header({ ...rest }) {
       {...{ ...rest }}
       className={clsx(
         ["fixed w-full bg-dblack-50 text-dwhite-50 px-4 h-20"],
-        ["top-0 left-0"]
+        ["top-0 left-0"],
+        ["w-full"]
       )}
     >
       <div
-        className="relative 
-      flex 
-      justify-between
-      items-center 
-      h-full"
+        className={clsx("relative flex justify-between items-center h-full", [
+          "lg:w-full",
+          "lg:justify-around",
+        ])}
       >
         <div className="text-4xl font-semibold">
           <span className="text-daccent-100">A</span>
           <span>mit</span>
         </div>
 
-        <menu onClick={toggleState}>
+        <nav className={clsx("hidden", "lg:flex", "lg:items-center")}>
+          <ul className="flex">
+            {headerData.header.map((elem, idx) => (
+              <li key={idx} className={clsx(["w-full"])}>
+                <a
+                  href={elem.link}
+                  className={clsx(
+                    ["block", "px-5 py-2"],
+                    ["text-sm", "font-medium", "leading-7", "text-dwhite-50"],
+                    [roboto.className]
+                  )}
+                >
+                  {elem.title.toUpperCase()}
+                </a>
+              </li>
+            ))}
+          </ul>{" "}|
+          <a
+            href="https://wa.me/917908261792"
+            className={clsx(["text-daccent-100", "block", "px-3"])}
+          >
+            +91 8918075974
+          </a>
+        </nav>
+
+        <menu onClick={toggleState} className={clsx(["lg:hidden"])}>
           <div className="menu h-[28px] w-[28px] flex items-center my-3 box-border">
             <span
               className={clsx(
